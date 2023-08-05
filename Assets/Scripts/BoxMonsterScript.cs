@@ -5,11 +5,14 @@ using UnityEngine;
 public class BoxMonsterScript : MonoBehaviour
 {
     public float moveSpeed;
+    private MonsterHealthScript monsterHealth;
     private GameObject player;
+    
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        monsterHealth = this.GetComponent<MonsterHealthScript>();
     }
 
     // Update is called once per frame
@@ -22,4 +25,5 @@ public class BoxMonsterScript : MonoBehaviour
         }
         
     }
+
 }
