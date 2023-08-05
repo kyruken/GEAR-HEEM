@@ -3228,16 +3228,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 3, y: 3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 4, y: 3, z: 0}
     second:
       serializedVersion: 2
@@ -4008,7 +3998,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 218
+  - m_RefCount: 217
     m_Data: {fileID: 11400000, guid: 0b4151345d5565f4ebdee7ae7fdba117, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -4019,10 +4009,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 218
+  - m_RefCount: 217
     m_Data: {fileID: -95203241, guid: 0402217805262c54dabee06b35d55138, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 218
+  - m_RefCount: 217
     m_Data:
       e00: 1
       e01: 0
@@ -4041,7 +4031,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 218
+  - m_RefCount: 217
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -5311,7 +5301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1874005527982648262, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
       propertyPath: m_Size.y
-      value: 0.3261513
+      value: 0.30565062
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874005527982648262, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1874005527982648262, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
       propertyPath: m_Offset.x
@@ -5319,7 +5313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1874005527982648262, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
       propertyPath: m_Offset.y
-      value: 0.1885618
+      value: 0.18777336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874005527982648262, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
+      propertyPath: m_ForceReceiveLayers.m_Bits
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 1976254412465553498, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
       propertyPath: m_LocalPosition.x
