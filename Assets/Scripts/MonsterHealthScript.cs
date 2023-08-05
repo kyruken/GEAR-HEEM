@@ -10,6 +10,7 @@ public class MonsterHealthScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -25,6 +26,11 @@ public class MonsterHealthScript : MonoBehaviour
             Die();
         }
 
+    }
+
+    public void addMaxHealth() {
+        Debug.Log("add health");
+        maxHealth += 1;
     }
 
     void Die() {

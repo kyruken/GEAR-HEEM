@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7229568489016517078}
   - component: {fileID: 720560419881951102}
   - component: {fileID: 8572862918892890252}
+  - component: {fileID: 611519701978251670}
   m_Layer: 0
   m_Name: RuffleMonster
   m_TagString: Mob
@@ -123,7 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  player: {fileID: 0}
 --- !u!50 &7229568489016517078
 Rigidbody2D:
   serializedVersion: 4
@@ -209,4 +209,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  playerHealth: {fileID: 0}
+--- !u!114 &611519701978251670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483834811368651988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc781ad230b4e6d4daa4dbee0ae7c9cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 8345688841204579675, guid: f0c703e611229714e92311aa14ab6c5a, type: 3}
+  timer: 0
+  shootRate: 5
