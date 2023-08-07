@@ -7,6 +7,7 @@ public class ShopScript : MonoBehaviour
     public int cost = 10;
     public string totemType;
     public GameObject text;
+    public GameObject costText;
     public Animator animator;
     private PlayerHealthScript playerHealth;
     private PlayerScript playerSpeed;
@@ -53,6 +54,7 @@ public class ShopScript : MonoBehaviour
         if (collision.gameObject.tag == "Player") 
         {
             text.SetActive(true);
+            costText.SetActive(true);
             playerInRadius = true;
         } 
     }
@@ -62,6 +64,7 @@ public class ShopScript : MonoBehaviour
         if (collision.gameObject.tag == "Player") 
         {
             text.SetActive(false);
+            costText.SetActive(false);
             playerInRadius = false;
         }         
     }
