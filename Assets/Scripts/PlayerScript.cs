@@ -7,7 +7,7 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject bullet;
     public Animator animator;
-    public float moveSpeed = 3f;
+    public float moveSpeed = 2f;
     public int playerAttackPower = 1;
     public float dirX;
     public bool m_FacingRight = true;  // For determining which way the player is currently facing.

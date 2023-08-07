@@ -8,8 +8,14 @@ public class RerollScript : MonoBehaviour
     public GameObject text;
     public GameObject costText;
     private bool playerInRadius = false;
+    public GameObject[] newTotems;
     public GameObject[] currentTotems;
     private PlayerExperienceScript playerExp;
+    private float spawnBoundX1 = -7.3f;
+    private float spawnBoundY1 = 3.77f;
+
+    private float spawnBoundX2 = 9.24f;
+    private float spawnBoundY2 = -1.46f;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +38,22 @@ public class RerollScript : MonoBehaviour
         Debug.Log("deleting totem");
         foreach (GameObject totem in currentTotems)
         {
-            Debug.Log("deleting totem");
             Destroy(totem);
         }
     }
 
     public void spawnNewTotems()
     {
+        int randomTotemSpawn = Random.Range(1, 8);
+        for (int totemSpawnCount = 0; totemSpawnCount < randomTotemSpawn; totemSpawnCount++)
+        {
+            float randomLocationX = Random.Range(spawnBoundX1, spawnBoundX2);
+            float randomLocationY = Random.Range(spawnBoundY1, spawnBoundY2);
+            int randomTotemNumber = Random.Range(0, 3);
+            Instantiate(newTotems[randomTotemNumber], new Vector3(randomLocationX, randomLocationY, 0), Quaternion.identity);
+
+        }
+
 
     }
 
@@ -49,6 +64,7 @@ public class RerollScript : MonoBehaviour
         {
             deleteCurrentTotems();
             playerExp.currentExp -= cost;
+            spawnNewTotems();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision) 
