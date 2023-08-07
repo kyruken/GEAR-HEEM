@@ -9,7 +9,8 @@ public class PlayerScript : MonoBehaviour
     public Animator animator;
     public float moveSpeed = 3f;
     public int playerAttackPower = 1;
-    private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+    public float dirX;
+    public bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private bool grounded;
 
     

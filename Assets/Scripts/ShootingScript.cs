@@ -25,5 +25,7 @@ public class ShootingScript : MonoBehaviour
 
     void Shoot() {
         Instantiate(bullet, Firepoint.position, Firepoint.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(Firepoint.up * bulletForce, ForceMode2D.Impulse);
     }
 }

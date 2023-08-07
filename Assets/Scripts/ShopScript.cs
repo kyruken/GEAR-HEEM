@@ -13,6 +13,7 @@ public class ShopScript : MonoBehaviour
     private PlayerScript playerSpeed;
     private PlayerScript playerAttackPower;
     private PlayerExperienceScript playerExp;
+    private RerollScript reroll;
     private bool playerInRadius = false;
     private bool totemActivated = true;
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class ShopScript : MonoBehaviour
                 break;                
             case "Range":
                 playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthScript>();
-                break;                
+                break;            
         }
 
         playerExp = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerExperienceScript>();
