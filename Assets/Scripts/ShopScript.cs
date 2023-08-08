@@ -9,10 +9,13 @@ public class ShopScript : MonoBehaviour
     public GameObject text;
     public GameObject costText;
     public Animator animator;
+    public GameObject bullet;
     private PlayerHealthScript playerHealth;
+    private BulletScript playerPierce;
     private PlayerScript playerSpeed;
     private PlayerScript playerAttackPower;
     private PlayerExperienceScript playerExp;
+    private ShootingScript playerFirerate;
     private RerollScript reroll;
     private bool playerInRadius = false;
     private bool totemActivated = true;
@@ -33,7 +36,13 @@ public class ShopScript : MonoBehaviour
                 break;                
             case "Range":
                 playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthScript>();
-                break;            
+                break; 
+            case "Pierce":
+                playerPierce = bullet.GetComponent<BulletScript>();
+                break;  
+            case "Firerate":
+                playerFirerate = GameObject.FindGameObjectWithTag("Player").GetComponent<ShootingScript>();
+                break;          
         }
 
         playerExp = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerExperienceScript>();
@@ -87,8 +96,11 @@ public class ShopScript : MonoBehaviour
                 case "Experience":
                     playerExp.expPlusGain += 1;
                     break;
-                case "Range":
-                    playerSpeed.moveSpeed += 1f;
+                case "Pierce":
+                    playerPierce.bulletPierceLimit += 1;
+                    break;
+                case "Firerate":
+                    playerFirerate.fireRate -= 0.05f;
                     break;
             }
             playerExp.currentExp -= cost;

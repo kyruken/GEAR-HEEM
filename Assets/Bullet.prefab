@@ -173,5 +173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 3080654788502031094}
-  damage: 1
+  playerAttackPower: 0
+  bulletPierceLimit: 1
   monsterHealth: {fileID: 0}

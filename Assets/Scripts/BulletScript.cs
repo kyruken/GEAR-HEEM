@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour
     public Rigidbody2D rb;
     public int playerAttackPower;
     public int bulletPierceLimit;
-    private int currentPierceCount = 1;
+    private int currentPierceCount;
 
     public MonsterHealthScript monsterHealth;
 

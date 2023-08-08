@@ -10,7 +10,7 @@ public class PlayerMeleeScript : MonoBehaviour
     public float fireRate = 1f;
     private float timer = 0;
     private float swordAnimTimer = 0;
-    private float animLinger = 2.5f;
+    private float animLinger = 1f;
     // Start is called before the first frame update
     void Start()
     {

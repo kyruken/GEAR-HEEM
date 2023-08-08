@@ -49,7 +49,7 @@ public class RerollScript : MonoBehaviour
         {
             float randomLocationX = Random.Range(spawnBoundX1, spawnBoundX2);
             float randomLocationY = Random.Range(spawnBoundY1, spawnBoundY2);
-            int randomTotemNumber = Random.Range(0, 3);
+            int randomTotemNumber = Random.Range(0, 5);
             Instantiate(newTotems[randomTotemNumber], new Vector3(randomLocationX, randomLocationY, 0), Quaternion.identity);
 
         }
