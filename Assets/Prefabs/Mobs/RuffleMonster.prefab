@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 720560419881951102}
   - component: {fileID: 8572862918892890252}
   - component: {fileID: -334456516442059161}
+  - component: {fileID: 551869838450072290}
   m_Layer: 0
   m_Name: RuffleMonster
   m_TagString: Mob
@@ -224,3 +225,18 @@ MonoBehaviour:
   bullet: {fileID: 8345688841204579675, guid: f0c703e611229714e92311aa14ab6c5a, type: 3}
   timer: 0
   shootRate: 5
+--- !u!114 &551869838450072290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483834811368651988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cc53c51dec8bf49a4b339330c36842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  health: 3
+  exp: {fileID: 3388882920810906259, guid: e0c305f803411dd488b4c26a5d80c178, type: 3}
