@@ -202,7 +202,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Firepoint: {fileID: 1741210394}
+  animator: {fileID: 115856522}
   swordHitbox: {fileID: 5760561485741535626, guid: 9144c4f39cb0167479e58d74f23f1b25, type: 3}
+  fireRate: 1
 --- !u!1 &160478791
 GameObject:
   m_ObjectHideFlags: 0
@@ -6117,6 +6119,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.006
       objectReference: {fileID: 0}
+    - target: {fileID: 3239273668634280079, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 115856522}
     - target: {fileID: 5909121969704003274, guid: e224cc0fc18ed984c98856e9a98a94e5, type: 3}
       propertyPath: m_Mass
       value: 1

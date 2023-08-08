@@ -7,12 +7,15 @@ public class BulletScript : MonoBehaviour
     public float speed = 5f;
     public Rigidbody2D rb;
     public int playerAttackPower;
+    public int bulletPierceLimit;
+    private int currentPierceCount = 1;
 
     public MonsterHealthScript monsterHealth;
 
     // Start is called before the first frame update
     void Start()
     {
+        currentPierceCount = 0;
         playerAttackPower = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>().playerAttackPower;
         rb.velocity = transform.right * speed;
     }
@@ -28,7 +31,18 @@ public class BulletScript : MonoBehaviour
         MonsterHealthScript monster = collision.GetComponent<MonsterHealthScript>();
         if (monster != null) {
             monster.takeDamage(playerAttackPower);
+            currentPierceCount++;
+            if (currentPierceCount >= bulletPierceLimit)
+            {
+                Destroy(gameObject);
+            }
         }
+
+        if (collision.gameObject.tag == "Ground")
+        {
+            Destroy(gameObject);
+        }
+
 
     }
 }
