@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2020096428107355946}
   - component: {fileID: 7172390932639822856}
   - component: {fileID: 3799931044259056119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7692057646201969660}
   - component: {fileID: 8402698136152370341}
   - component: {fileID: -5083861626082127373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SandalTotem
   m_TagString: Totem
   m_Icon: {fileID: 0}
@@ -206,6 +206,7 @@ MonoBehaviour:
   text: {fileID: 5059486598304105137}
   costText: {fileID: 6170623739110332435}
   animator: {fileID: 7692057646201969660}
+  bullet: {fileID: 0}
 --- !u!61 &926592886890932865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -356,7 +357,7 @@ GameObject:
   - component: {fileID: 3127107712371991694}
   - component: {fileID: 608101844730091115}
   - component: {fileID: 4746477107935779876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +468,7 @@ GameObject:
   - component: {fileID: 5253779887008663051}
   - component: {fileID: 1707761996871809133}
   - component: {fileID: 7683071562203921512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

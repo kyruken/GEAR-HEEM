@@ -4,32 +4,41 @@ using UnityEngine;
 
 public class MonsterSpawnerScript : MonoBehaviour
 {
-    public float spawnRate = 5f;
-    public float timer = 0f;
-    public float scaleTimer = 0f;
-    public float scaleRate = 5f;
-    public float scaleReduction = 0.25f;
+    public float points;
+    public float neededPointsForSpawn;
+    public float addPoints;
+    private float timer = 0f;
+    private float oneSecond = 1f;
+    private float seconds = 0f;
+    private float a = 35f;
+    private float b = 100f;
+    private float c = 5f;
     public GameObject monster;
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer < spawnRate) {
-            timer += Time.deltaTime;
-        } else {
-            timer = 0;
-            spawnMonster();
-        }
+            if (timer < oneSecond)
+            {
+                timer += Time.deltaTime;
+            }
+            else 
+            {
+                timer = 0;
+                seconds += 1f;
+                points += addPoints;
+                addPoints = (seconds*a)/(seconds+b) + c;
+            }
 
-        if (scaleTimer < spawnRate) {
-            scaleTimer += Time.deltaTime;
-        } else {
-            scaleTimer = 0;
-            spawnRate -= scaleReduction;
+        if (points >= neededPointsForSpawn)
+        {
+            spawnMonster();
+            points -= neededPointsForSpawn;
         }
 
     }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8651395124286435785}
   - component: {fileID: 5068304376765933362}
   - component: {fileID: 7605858609722632742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RulerTotem
   m_TagString: Totem
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 8088154461674687646}
   - component: {fileID: 5158801583580826539}
   - component: {fileID: 7516056338130548036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 1469005230862159247}
   - component: {fileID: 1868947115210676738}
   - component: {fileID: 7905975593075174467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 3574369768425557068}
   - component: {fileID: 7695155423348461752}
   - component: {fileID: 8625494390527548135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

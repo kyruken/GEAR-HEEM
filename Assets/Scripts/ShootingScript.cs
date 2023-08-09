@@ -7,7 +7,7 @@ public class ShootingScript : MonoBehaviour
     public Transform Firepoint;
     public Animator animator;
     public GameObject bullet;
-    public float fireRate = 1f;
+    public float fireRate = 0.85f;
     public float bulletForce = 20f;
     private float timer = 0;
     private float shootAnimTimer = 0;

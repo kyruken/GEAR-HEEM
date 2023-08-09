@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1951742576844401648}
   - component: {fileID: 6950172911244689357}
   - component: {fileID: 2252533588706017886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CokeTotem
   m_TagString: Totem
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 9009599931328341789}
   - component: {fileID: 9053644869176745504}
   - component: {fileID: 508436312081070703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 4294243318456682247}
   - component: {fileID: 6491588904212871564}
   - component: {fileID: 3747161029569403534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 52825777888355601}
   - component: {fileID: 3202745966389787343}
   - component: {fileID: 4926293528384618239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

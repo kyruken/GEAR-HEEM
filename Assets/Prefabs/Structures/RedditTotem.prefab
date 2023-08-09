@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4846209610416139055}
   - component: {fileID: 4394859738290951526}
   - component: {fileID: 1498311635390308133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 2765627548320465893}
   - component: {fileID: 3194615424119287346}
   - component: {fileID: 2072308886301329649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 8896203477750214965}
   - component: {fileID: -2145681434603265057}
   - component: {fileID: 7563749294982443369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedditTotem
   m_TagString: Totem
   m_Icon: {fileID: 0}
@@ -318,6 +318,7 @@ MonoBehaviour:
   text: {fileID: 3034163165101256938}
   costText: {fileID: 6179593341254771159}
   animator: {fileID: 8896203477750214965}
+  bullet: {fileID: 0}
 --- !u!61 &8297489000362352147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -467,7 +468,7 @@ GameObject:
   - component: {fileID: 1609654039068906784}
   - component: {fileID: 7760286172799792063}
   - component: {fileID: 8924701419721848072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

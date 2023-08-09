@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8510965383391120909}
   - component: {fileID: 8433782733967264916}
   - component: {fileID: 7132349625194791148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 4225220079802048896}
   - component: {fileID: -701288400981311758}
   - component: {fileID: -4188246074464718175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CargoTotem
   m_TagString: Totem
   m_Icon: {fileID: 0}
@@ -206,6 +206,7 @@ MonoBehaviour:
   text: {fileID: 1448729906571498702}
   costText: {fileID: 4108388220788331337}
   animator: {fileID: 4225220079802048896}
+  bullet: {fileID: 0}
 --- !u!61 &5853181047565911935
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -355,7 +356,7 @@ GameObject:
   - component: {fileID: 7149155473356148418}
   - component: {fileID: 8017841417633104176}
   - component: {fileID: 4047039427739541292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +454,7 @@ GameObject:
   - component: {fileID: 1019013441800987420}
   - component: {fileID: 2076976149414351431}
   - component: {fileID: 5088341468700220331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}

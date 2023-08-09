@@ -21,6 +21,7 @@ public class RerollScript : MonoBehaviour
     {
         currentTotems = GameObject.FindGameObjectsWithTag("Totem");
         playerExp = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerExperienceScript>();
+        spawnNewTotems();
     }
 
     // Update is called once per frame
@@ -44,7 +45,7 @@ public class RerollScript : MonoBehaviour
 
     public void spawnNewTotems()
     {
-        int randomTotemSpawn = Random.Range(1, 8);
+        int randomTotemSpawn = Random.Range(4, 8);
         for (int totemSpawnCount = 0; totemSpawnCount < randomTotemSpawn; totemSpawnCount++)
         {
             float randomLocationX = Random.Range(spawnBoundX1, spawnBoundX2);

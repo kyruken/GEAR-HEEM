@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5875390236160534001}
   - component: {fileID: 7735331520826695835}
   - component: {fileID: -4546272769595345604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FriesTotem
   m_TagString: Totem
   m_Icon: {fileID: 0}
@@ -109,6 +109,7 @@ MonoBehaviour:
   text: {fileID: 6934276631503757054}
   costText: {fileID: 6260001786491195214}
   animator: {fileID: 5875390236160534001}
+  bullet: {fileID: 0}
 --- !u!61 &6571090105871163553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -258,7 +259,7 @@ GameObject:
   - component: {fileID: 3507235094751567540}
   - component: {fileID: 450589118223240523}
   - component: {fileID: 1203483806814644862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +356,7 @@ GameObject:
   - component: {fileID: 5964961376069721473}
   - component: {fileID: 3358300504790039236}
   - component: {fileID: 1300500562407521076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +454,7 @@ GameObject:
   - component: {fileID: 3140235526356130145}
   - component: {fileID: 545880158818055269}
   - component: {fileID: 8766866427154924184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}

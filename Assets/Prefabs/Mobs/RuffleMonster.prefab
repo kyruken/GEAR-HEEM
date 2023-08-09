@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
 --- !u!50 &7229568489016517078
 Rigidbody2D:
   serializedVersion: 4
@@ -237,6 +239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90cc53c51dec8bf49a4b339330c36842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  health: 3
+  maxHealth: 1
+  health: 1
   exp: {fileID: 3388882920810906259, guid: e0c305f803411dd488b4c26a5d80c178, type: 3}
